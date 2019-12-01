@@ -32,6 +32,11 @@ const bbTwoBounds = [
   [50.0795, 14.432383]
 ]
 
+const heatBounds = [
+  [49.91156, 13.90904],
+  [50.2512, 14.89781]
+]
+
 function App() {
   return (
     <div>
@@ -99,6 +104,7 @@ function App() {
           geojsonData={[bb1Roofs, bb2Roofs]}
           zoom="15"
           center={center}
+          heatMapBounds={heatBounds}
           bounds={[bbOneBounds, bbTwoBounds]}
         />
       </MapContainer>
