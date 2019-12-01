@@ -19,7 +19,13 @@ function App({ geojsonData, zoom, center, bounds, heatMapBounds, geoStyle }) {
       })}
       {bounds.map(bound => {
         return (
-          <Rectangle bounds={bound} color="blue" key={shortid.generate()} />
+          <Rectangle
+            bounds={bound}
+            color="#009548"
+            opacity="0.8"
+            fillOpacity="0"
+            key={shortid.generate()}
+          />
         )
       })}
       {heatMapBounds.length > 0 ? (

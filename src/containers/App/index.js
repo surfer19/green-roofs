@@ -123,12 +123,7 @@ function App() {
         </section>
       </Container>
       <MapContainer>
-        <Map
-          geojsonData={[bb1Categ, bb2Categ]}
-          zoom="15"
-          center={center}
-          bounds={[bbOneBounds, bbTwoBounds]}
-        />
+        <Map geojsonData={[bb1Categ, bb2Categ]} zoom="15" center={center} />
       </MapContainer>
       <Container>
         <section className="section text-center">
