@@ -1,4 +1,7 @@
 import React from "react"
+import PropTypes from "prop-types"
+// the hoc
+import { withNamespaces } from "react-i18next"
 import "./App.css"
 import Map from "../../components/Map"
 // JSONs
@@ -37,7 +40,8 @@ const heatBounds = [
   [50.2512, 14.89781]
 ]
 
-function App() {
+// eslint-disable-next-line no-unused-vars
+function App({ t }) {
   return (
     <div>
       {/*
@@ -60,6 +64,7 @@ function App() {
        * All roofs map with text
        */}
       <Container>
+        {/* <h1>{t("Welcome to React")}</h1> */}
         <section className="section text-center">
           <H2>
             Open data <Shine>+</Shine> Satellite imagery <Shine>=</Shine>
@@ -139,4 +144,9 @@ function App() {
   )
 }
 
-export default App
+App.propTypes = {
+  // eslint-disable-next-line react/require-default-props
+  t: PropTypes.func
+}
+
+export default withNamespaces()(App)

@@ -1,10 +1,13 @@
 import React from "react"
+import { withNamespaces } from "react-i18next"
+import PropTypes from "prop-types"
 import H2 from "../H2"
 import P from "../P"
 import Shine from "../Shine"
 import Container from "../Container"
 
-function SectionExplanation() {
+// eslint-disable-next-line no-unused-vars
+function SectionExplanation({ t }) {
   return (
     <Container className="section text-center">
       <H2>
@@ -27,4 +30,9 @@ function SectionExplanation() {
   )
 }
 
-export default SectionExplanation
+SectionExplanation.propTypes = {
+  // eslint-disable-next-line react/require-default-props
+  t: PropTypes.func
+}
+
+export default withNamespaces()(SectionExplanation)

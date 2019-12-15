@@ -1,11 +1,14 @@
 import React from "react"
+import { withNamespaces } from "react-i18next"
+import PropTypes from "prop-types"
 import H2 from "../H2"
 import P from "../P"
 import Shine from "../Shine"
 import Container from "../Container"
 import "./index.css"
 
-function SectionMotivation() {
+// eslint-disable-next-line no-unused-vars
+function SectionMotivation({ t }) {
   return (
     <section className="section motivation text-center">
       <Container>
@@ -28,4 +31,9 @@ function SectionMotivation() {
   )
 }
 
-export default SectionMotivation
+SectionMotivation.propTypes = {
+  // eslint-disable-next-line react/require-default-props
+  t: PropTypes.func
+}
+
+export default withNamespaces()(SectionMotivation)

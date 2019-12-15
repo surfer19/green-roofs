@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React from "react"
 import ReactDOM from "react-dom"
+import "./i18n"
 import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
 import App from "./containers/App"
