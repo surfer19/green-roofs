@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/green-roofs/static/css/main.b100e6da.chunk.css",
+    "main.js": "/green-roofs/static/js/main.2ebe9c02.chunk.js",
+    "main.js.map": "/green-roofs/static/js/main.2ebe9c02.chunk.js.map",
+    "runtime-main.js": "/green-roofs/static/js/runtime-main.c4ba69b7.js",
+    "runtime-main.js.map": "/green-roofs/static/js/runtime-main.c4ba69b7.js.map",
+    "static/js/2.99352bd4.chunk.js": "/green-roofs/static/js/2.99352bd4.chunk.js",
+    "static/js/2.99352bd4.chunk.js.map": "/green-roofs/static/js/2.99352bd4.chunk.js.map",
+    "index.html": "/green-roofs/index.html",
+    "precache-manifest.8872493322e3e2fa7c347bdefe2b2ac3.js": "/green-roofs/precache-manifest.8872493322e3e2fa7c347bdefe2b2ac3.js",
+    "service-worker.js": "/green-roofs/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/green-roofs/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/green-roofs/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4ba69b7.js",
+    "static/js/2.99352bd4.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.2ebe9c02.chunk.js"
+  ]
+}
